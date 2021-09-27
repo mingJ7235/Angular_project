@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SectionComponent } from './section/section.component';
 import { TimeDisplayComponent } from './section/time-display/time-display.component';
 import { ButtonsComponent } from './section/buttons/buttons.component';
+import { LayoutModule } from './layout/layout.module';
 
 @NgModule({ //데코레이터. 즉 장식자. 
   declarations: [ //컴포넌트
@@ -20,7 +21,10 @@ import { ButtonsComponent } from './section/buttons/buttons.component';
   ],
   imports: [ //다른 모듈들이 들어옴
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    LayoutModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent] //처음 실행할 컴포넌트 
