@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-time-display',
@@ -7,19 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimeDisplayComponent implements OnInit {
 
+  @Input() inputData : string;
+
   test : number = 1; //데이터 바인딩 
 
   constructor() { 
+    
+    // setInterval(() =>{ //비동기 
 
-    setInterval(() =>{ //비동기 
+    //   this.test ++;
 
-      this.test ++;
+    // }, 1000)
 
-    }, 1000)
-
+    console.log(this.inputData)
 
 
   }
+
+  
 
   ngOnInit(): void {
     
