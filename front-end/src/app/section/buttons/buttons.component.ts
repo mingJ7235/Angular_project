@@ -22,9 +22,10 @@ export class ButtonsComponent implements OnInit {
   //   console.log('test')
   //   console.log($event)
   // }
-  start () {
+  executeButton (command: string) {
     //this.count ++;
-    this.clickEventSection.emit('change'); //부모컴퍼넌트에게 정보를 전달하는 목적. 데이터를 전달하기 위해서 emit함수의 매개변수에 데이터를 넣으면 된다.  
+    // 자식컴퍼넌트가 부모컴퍼턴트에게 자료를 보내도록 하는 emi
+    this.clickEventSection.emit(command); //부모컴퍼넌트에게 정보를 전달하는 목적. 데이터를 전달하기 위해서 emit함수의 매개변수에 데이터를 넣으면 된다.  
   }
 
   ngOnInit(): void {
