@@ -1,0 +1,27 @@
+<div class = "title">
+
+    <div class="display">
+
+        <!-- input된 data는 [] 를 통하여 받아올 수 있다.  -->
+        <app-time-display [inputData]="present"></app-time-display>
+        <!-- <app-time-display></app-time-display>
+        <app-time-display></app-time-display>
+        <app-time-display></app-time-display> -->
+
+
+
+        <!-- emit 함수가 실행이되면 clickEventSection으로 이름 붙인 이벤트가 실행됨  -->
+        <!-- $event는 emit해서 들어오는 데이터를 받아주는 Angular의 키워드다.  -->
+        <app-buttons (clickEventSection) = "startTime($event)"></app-buttons>
+
+
+
+
+        <hr>
+
+
+        {{commandText}}
+        <app-buttons (clickEventSection) = "commandText = $event"></app-buttons>
+        
+    </div>
+</div>
