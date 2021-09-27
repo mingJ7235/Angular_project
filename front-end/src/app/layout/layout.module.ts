@@ -5,7 +5,7 @@ import { TestComponent } from './test/test.component';
 
 
 @NgModule({
-  declarations: [
+  declarations: [// 선언. 하나의 컴포넌트들은 하나의 ㄴNgModule에 속해야 한다. 
     TestComponent
   ],
   exports:[
