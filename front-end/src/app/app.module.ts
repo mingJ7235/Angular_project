@@ -15,7 +15,7 @@ import { SectionModule } from './section/section.module';
 
   imports: [ //다른 모듈들이 들어옴
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, //라우팅 모듈. 라우팅에 대한 부분을 모아둔 모듈. 
     LayoutModule,
     SectionModule
 

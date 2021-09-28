@@ -24,4 +24,11 @@
         <app-buttons (clickEventSection) = "commandText = $event"></app-buttons>
         
     </div>
+    <!-- router끼리 페이지이동을 할경우에는 routerLink르 사용해야한다.  
+        / 이 없다면 기존의 경로에서 붙어서 들어간다. 
+        /clock : localhost:4200/clock
+        clock : localhost:4200/stopwatch/clock
+    -->
+    <a [routerLink] ="'/clock'"> 시계로 이동</a> 
+
 </div>
