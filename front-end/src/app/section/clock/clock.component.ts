@@ -40,7 +40,7 @@ export class ClockComponent implements OnInit {
   // }
 
   goStopwatch() {
-    
+
     this.router.navigateByUrl('/stopwatch');
   }
 
