@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {map} from 'rxjs/operators';
-import * as moment from 'moment';
+import * as moment from 'moment'; //시간관련해서는 가장 잘 만들어진 라이브러리다. 
 import { interval } from 'rxjs';
 import { Router } from '@angular/router';
 
