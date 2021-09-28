@@ -31,7 +31,9 @@ export class ClockComponent implements OnInit {
       })
 
   }
-
+  /**
+   * component가 불릴때마다, 변화가있으면 함수가 계속 불리게된다. 
+   */
   //메소드로 콜을 계속 부르게 된다. 
   // 이런 방식 말고, RXJS 방식을 사용한다. 
   // getCurrentTime () {

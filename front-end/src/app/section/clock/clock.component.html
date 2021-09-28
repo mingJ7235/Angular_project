@@ -1,11 +1,13 @@
 <!-- <p>{{getCurrentTime()}}</p> -->
+<div class = "display">
+    <p class = "time-string">
+        {{timeString}}
+    </p>
+    
+    <button (click) = "goStopwatch()">
+        스탑워치로 이동
+    </button>
 
-<p class = "time-string">
-    {{timeString}}
-</p>
-
-<button (click) = "goStopwatch()">
-    시계로 이동
-</button>
+</div>
 
 <!-- <a [routerLink] = "'/stopwatch'"> 스톱워치로 이동 </a> -->
