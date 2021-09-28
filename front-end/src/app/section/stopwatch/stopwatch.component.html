@@ -12,16 +12,16 @@
 
         <!-- emit 함수가 실행이되면 clickEventSection으로 이름 붙인 이벤트가 실행됨  -->
         <!-- $event는 emit해서 들어오는 데이터를 받아주는 Angular의 키워드다.  -->
-        <app-buttons (clickEventSection) = "startTime($event)"></app-buttons>
+        <!-- <app-buttons (clickEventSection) = "startTime($event)"></app-buttons> -->
 
 
 
 
-        <hr>
+        <!-- <hr> -->
 
 
-        {{commandText}}
-        <app-buttons (clickEventSection) = "commandText = $event"></app-buttons>
+        <!-- {{commandText}} -->
+        <!-- <app-buttons (clickEventSection) = "commandText = $event"></app-buttons> -->
         
     </div>
     <!-- router끼리 페이지이동을 할경우에는 routerLink르 사용해야한다.  
@@ -30,5 +30,10 @@
         clock : localhost:4200/stopwatch/clock
     -->
     <a [routerLink] ="'/clock'"> 시계로 이동</a> 
+
+    <button (click) = "goClock()">
+
+        시계로 이동
+    </button>
 
 </div>
