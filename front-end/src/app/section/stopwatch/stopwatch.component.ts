@@ -22,6 +22,7 @@ export class StopwatchComponent implements OnInit {
   
   goClock() {
     //router를 통해서 url 즉, /clock으로 보내겠다.!
+    this.routingCount ++;
     this.router.navigateByUrl('/clock')
   }
   

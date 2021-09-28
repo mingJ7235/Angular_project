@@ -14,7 +14,8 @@ export class ClockComponent implements OnInit {
   timeString : any;
 
   constructor(
-    private router : Router
+    private router : Router,
+    // private timeString : string
   ) { 
 
     // setInterval(() =>{
@@ -43,6 +44,7 @@ export class ClockComponent implements OnInit {
 
   goStopwatch() {
 
+    //라우팅을 사용하여 페이지 이동 
     this.router.navigateByUrl('/stopwatch');
   }
 

@@ -15,7 +15,10 @@ export class TimeDisplayComponent implements OnInit{
 
   timeInterval : any;
 
-  constructor() { 
+  constructor(
+    // private @Input() inputData : string
+
+  ) { 
     // setInterval(() =>{ //비동기 
     //   this.test ++;
     // }, 1000)
