@@ -3,7 +3,11 @@ import { Component, OnInit, Input, SimpleChanges} from '@angular/core';
 @Component({
   selector: 'app-time-display',
   templateUrl: './time-display.component.html',
-  styleUrls: ['./time-display.component.scss']
+  styleUrls: [
+    './time-display.component.scss',
+    '../stopwatch.component.scss'
+
+  ]
 })
 export class TimeDisplayComponent implements OnInit{
 
@@ -34,8 +38,8 @@ export class TimeDisplayComponent implements OnInit{
         this.ms = 0;
         this.sec ++;
         if(this.sec > 59) {
-          this.min ++;
           this.sec = 0;
+          this.min ++;
         }
       }
     }, 10)
