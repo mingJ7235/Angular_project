@@ -30,6 +30,14 @@ export class TimeDisplayComponent implements OnInit{
     this.timeStop();
     this.timeInterval = setInterval(() => {
       this.ms ++;
+      if(this.ms > 99) {
+        this.ms = 0;
+        this.sec ++;
+        if(this.sec > 59) {
+          this.min ++;
+          this.sec = 0;
+        }
+      }
     }, 10)
 
 
@@ -42,6 +50,8 @@ export class TimeDisplayComponent implements OnInit{
   timeReset() {
     this.timeStop();
     this.ms = 0;
+    this.sec =0;
+    this.min =0;
   }
 
   

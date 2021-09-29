@@ -16,7 +16,7 @@ export class ClockComponent implements OnInit {
 
   constructor(
     private router : Router,
-    private pageToggleService : PageToggleService
+    //private pageToggleService : PageToggleService
     // private timeString : string
   ) { 
 
@@ -52,7 +52,8 @@ export class ClockComponent implements OnInit {
   // }
 
   goStopwatch() {
-    this.pageToggleService.goPage('/stopwatch')
+    this.router.navigateByUrl('/stopwatch')
+    //this.pageToggleService.goPage('/stopwatch')
     //라우팅을 사용하여 페이지 이동 
   }
 

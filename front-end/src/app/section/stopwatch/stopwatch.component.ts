@@ -17,14 +17,15 @@ export class StopwatchComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private pageToggleService : PageToggleService
+    //private pageToggleService : PageToggleService
   
     ) { }
 
   
   goClock() {
     //router를 통해서 url 즉, /clock으로 보내겠다.!
-    this.pageToggleService.goPage('/clock')
+    this.router.navigateByUrl('/clock')
+    //this.pageToggleService.goPage('/clock')
   }
   
   startTime($event : any) {
