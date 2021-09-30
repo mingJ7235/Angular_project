@@ -22,7 +22,7 @@ import { PageToggleService } from './share/page-toggle.service';
 
   ],
   providers: [
-    PageToggleService
+    //PageToggleService
   ],
   bootstrap: [AppComponent] //처음 실행할 컴포넌트 
 })

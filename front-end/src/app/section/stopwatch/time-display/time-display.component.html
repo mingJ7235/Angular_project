@@ -27,4 +27,14 @@ stop
 reset
 </button>
 
-{{pageToggleService.routingCount}}
+<!-- {{pageToggleService.routingCount}} -->
+
+
+<!-- 
+    원래는 부모 html에서는 자식 태그 안에 무얼 넣어도 반응이 없다.
+    하지만, <ng-content> 태그를 사용하면, 부모 html 안에 있는
+    자식 테그안에 기술된 내용들을 나타나게 할 수 있다.
+    이를 transclude라고한다. 
+    이 기법이 필요한 경우가 있다. 
+ -->
+<ng-content></ng-content>

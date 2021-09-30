@@ -31,7 +31,26 @@ export class StopwatchComponent implements OnInit {
     public pageToggleService : PageToggleService
   
     ) { }
+  
 
+    // ngAfterContentInit() {
+    //   /**
+    //    * content : 
+    //    */
+    //   console.log('ng afger content init')
+    // }
+  
+    // ngAfterContentChecked() {
+    //   console.log('ng after content checked')
+    // }
+  
+    // ngAfterViewInit() {
+    //   console.log('ng after view init')
+    // }
+  
+    // ngAfterViewChecked() {
+    //   console.log('ng after view checked')
+    // }  
   
   goClock() {
     //router를 통해서 url 즉, /clock으로 보내겠다.!

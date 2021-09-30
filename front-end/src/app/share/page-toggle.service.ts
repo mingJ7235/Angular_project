@@ -17,6 +17,15 @@ import { StopwatchModule } from '../section/stopwatch/stopwatch.module';
      */
     //providedIn : StopwatchComponent//StopwatchModule (둘중 아무거나해도댐)
   //}
+  {
+    /**
+     * 'root' 를 넣으면, root module에 인젝션해주는 것임. 
+     * 앵귤러는 이렇게 인젝션하는 방법을 권장한다. 
+     * 특정 이유가 아니라면 대부분의 서비스를 등록을 root로 등록하는 것이 일반적이다. 
+     * 
+     */
+    providedIn : 'root'
+  }
 )
 export class PageToggleService {
 

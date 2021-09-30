@@ -3,7 +3,10 @@
     <div class="display">
 
         <!-- input된 data는 [] 를 통하여 받아올 수 있다.  -->
-        <app-time-display [inputData]="present"></app-time-display>
+        <app-time-display [inputData]="present">
+
+            <p>transclude 연습</p>
+        </app-time-display>
         <!-- <app-time-display></app-time-display>
         <app-time-display></app-time-display>
         <app-time-display></app-time-display> -->
@@ -36,12 +39,12 @@
             시계로 이동
         </button>
 
-        <button (click) = "pageToggleService.plusCount()">
+        <!-- <button (click) = "pageToggleService.plusCount()">
     
             숫자 확인 테스트
         </button>
 
-        {{pageToggleService.routingCount}}
+        {{pageToggleService.routingCount}} -->
 
     </div>
 
